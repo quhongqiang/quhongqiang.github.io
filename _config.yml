@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     3307915455/profile?topnav=1&wvr=6&is_all=1
+# weibo_username:     3307915455/profile?topnav=1&wvr=6&is_all=1
 zhihu_username:     qu-hong-qiang-56/activities
 resume_url: https://quhongqiang.com/resume/dist
 github_username:    quhongqiang
