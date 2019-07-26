@@ -12,6 +12,7 @@
 
 <p>本博客主要使用 <a href="https://pages.github.com/">GitHub Pages</a> + <a href="https://www.jekyll.com.cn/">Jekyll</a> 搭建。克隆了 <a href="https://www.shiyanping.top/">Shiyanping</a> 的主题，主题出自于<a href="http://huangxuan.me/">Hux</a>,在此深表感谢！</p>
 
+<a href="https://quhongqiang.com/resume/dist/#/" target="_blank">我的个人简历</a>
 
 <!-- <p>本人目前暂住北京，如果有前端的岗位，希望可以联系一下我。</p> -->
 

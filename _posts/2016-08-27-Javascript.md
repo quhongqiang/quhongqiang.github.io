@@ -7,7 +7,7 @@ title: 11个非常实用的JavaScript小技巧
 subtitle: 这些小技巧可能在你的实际工作中或许能帮助你解决一些问题。
 catalog: true
 tags:
-  - JS
+  - Js
 ---
 
 在这篇文章中将给大家分享12个有关于JavaScript的小技巧。这些小技巧可能在你的实际工作中或许能帮助你解决一些问题。
