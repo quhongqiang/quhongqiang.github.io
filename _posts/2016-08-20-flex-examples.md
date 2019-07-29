@@ -472,11 +472,3 @@ footer {
 ```
 
 > 转载自：<a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank">阮一峰Flex 布局教程：实例篇</a>
-
-
-
-
-
-
-
-
