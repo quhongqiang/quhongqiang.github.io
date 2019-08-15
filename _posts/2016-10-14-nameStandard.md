@@ -3,7 +3,7 @@ layout: post
 header-img: "img/post-bg-css.png"
 header-mask: 0.4
 author: '曲小强'
-title: html+css书写规范和顺序
+title: CSS书写规范和顺序
 subtitle: 自己整理的html和css的书写规范
 catalog: true
 tags: 
@@ -78,7 +78,7 @@ tags:
 
 > 4）渲染，绘制render树：浏览器已经知道啦哪些节点要显示，每个节点的css属性是什么，每个节点在屏幕中的位置是哪里。就进入啦最后一步，按照计算出来的规则，通过显卡把内容画在屏幕上。
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css-rule-tree.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css-rule-tree.png?raw=true)
 
 > 浏览器并不是一获取到css样式就立马开始解析而是根据css样式的书写顺序按照dom树的结构分布render样式，完成第（2）步，然后开始遍历每个树节点的css样式进行解析，此时的css样式的遍历顺序完全是按照之前的的书写顺序，在解析过程中，`一旦浏览器发现某个元素的定位变化影响布局`，则需要倒回去重新渲染。
 
@@ -94,19 +94,19 @@ tags:
 **一、使用CSS缩写属性**
 
 CSS有些属性是可以缩写的，比如`padding,margin,font`等等，这样精简代码同时又能提高用户的阅读体验。
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css11.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css11.png?raw=true)
 
 **去掉小数点前的“0”**
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css22.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css22.png?raw=true)
 
 **简写命名(前提是要让人看懂你的命名才能简写哦)**
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css33.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css33.png?raw=true)
 
 **16进制颜色代码缩写**
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css44.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css44.png?raw=true)
 
 **连字符CSS选择器命名规范**
 > 1.长名称或词组可以使用中横线来为选择器命名。
@@ -116,7 +116,7 @@ CSS有些属性是可以缩写的，比如`padding,margin,font`等等，这样�
   - 浏览器兼容问题 （比如使用_tips的选择器命名，在IE6是无效的）
   - 能良好区分JavaScript变量命名（JS变量命名是用“_”）
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css55.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css55.png?raw=true)
 
 - **功能（.f-）**
 
@@ -235,7 +235,7 @@ CSS有些属性是可以缩写的，比如`padding,margin,font`等等，这样�
 >- 方便其他设备解析，如盲人阅读器根据语义渲染网页
 >- 有利于开发和维护，语义化更具可读性，代码更好维护，与CSS3关系更和谐。
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/css66.png?raw=true)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/css66.png?raw=true)
 
 
 _**1、<header>**_
