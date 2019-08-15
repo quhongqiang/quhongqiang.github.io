@@ -729,6 +729,10 @@ samp {
     padding-left: 20px;
   }
 }
+ul li {
+  margin: 5px 0;
+}
+
 .post-container ol ol,
 .post-container ol ul,
 .post-container ul ol,
