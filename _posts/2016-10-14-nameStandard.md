@@ -47,7 +47,7 @@ tags:
   content --------------- 用于网页中部主体
   footer ---------------- 用于底部
 ```
-![放个图](http://img2.imgtn.bdimg.com/it/u=2649924513,2568070485&fm=26&gp=0.jpg)
+![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/16c94a2ec9ff1c44.png?raw=true)
 #### 3、样式属性顺序
   - 1、定位：`position` `z-index` `left` `right` `top` `bottom` `clip`等。
   - 2、自身属性：`width` `height` `min-height` `max-height` `min-width` `max-width`等。

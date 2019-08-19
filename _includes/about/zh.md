@@ -14,7 +14,13 @@
 
 <a href="https://quhongqiang.com/resume/dist/#/" target="_blank">我的个人简历</a>
 
-<!-- <p>本人目前暂住北京，如果有前端的岗位，希望可以联系一下我。</p> -->
+<p>本人目前居住在北京，如果有前端的岗位，希望可以联系一下我。</p>
+
+<div>
+  <img src="https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/17.png?raw=true" alt="微信订阅号">
+  <br />
+  <p>我的个人订阅号，每天会更新你想知道的文章，欢迎关注</p>
+</div>
 
 <h2><strong>联系方式</strong></h2>
 

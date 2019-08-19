@@ -25,6 +25,7 @@
   <li><a href="https://tinypng.com/">熊猫压缩</a></li>
   <li><a href="http://www.dowebok.com/131.html">Wow.js让页面动起来</a></li>
   <li><a href="http://500ding.lofter.com/">五百丁简历</a></li>
+  <li><a href="http://cn.redux.js.org/">redux·中文文档</a></li>
   <li><a href="https://quhongqiang.com/">我的博客</a></li>
 </ul>
 
