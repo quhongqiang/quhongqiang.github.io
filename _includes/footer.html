@@ -1,5 +1,17 @@
+<style>
+#busuanzi_value_site_pv {
+    color: red;
+    font-weight: bold;
+}
+#busuanzi_value_site_uv {
+    color: red;
+    font-weight: bold;
+}
+
+</style>
+
 <!-- Footer -->
-<footer>
+<footer style="background-color: #f4f4f4">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -7,14 +19,14 @@
                 {% include sns-links.html center=true %}
 
                 <p class="copyright text-muted">
-                    Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
+                    Copyright &copy; <span style="color: cornflowerblue">{{ site.title }}</span> {{ site.time | date: '%Y' }}
                     <br>
-                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
-                    </iframe>
+                    <span id="busuanzi_container_site_pv">
+                        总访问量 <span id="busuanzi_value_site_pv"></span> 次
+                    </span>&nbsp;
+                    <span id="busuanzi_container_site_uv">
+                        访客数 <span id="busuanzi_value_site_uv"></span> 人次
+                    </span>
                 </p>
             </div>
         </div>
@@ -23,6 +35,10 @@
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+
+<!-- 访问量 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->

@@ -945,8 +945,9 @@ ul li {
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
-    top: -61px;
-    background-color: rgba(255, 255, 255, 0.9);
+    top: -71px;
+    background-color: #f4f4f4;
+    opacity: .9;
     border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
@@ -1167,9 +1168,25 @@ ul li {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
+    position: relative;
     font-size: 26px;
     line-height: 1.3;
     margin-bottom: 10px;
+  }
+  .post-preview > a > .post-title:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      height: 2px;
+      width: 100%;
+      background: #4285f4;
+      transform: scale(0);
+      transition: all 0.3s;
+  }
+  .post-preview > a > .post-title:hover:before{
+      transform: scale(1);
+      color: blue;
   }
   .post-preview > a > .post-subtitle {
     font-size: 16px;
