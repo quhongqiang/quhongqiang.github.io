@@ -3,12 +3,52 @@ layout: page
 description: "Believe in yourself"
 ---
 
+<style>
+.position {
+    text-align: center;
+}
+.spot {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0
+}
+.svg-wrapper {
+	position:relative;
+	display:inline-block;
+}
+#shape {
+	stroke-width:6px;
+	fill:transparent;
+	stroke-dasharray:85 400;
+	stroke-dashoffset:-220;
+	transition:1s all ease
+}
+#text {
+	margin-top: -40px;
+	text-align:center
+}
+#text a {
+	color:#999;
+	text-decoration:none;
+	font-weight:100;
+	font-size: 16px
+}
+.svg-wrapper:hover #shape {
+	stroke-dasharray:50 0;
+	stroke-width:3px;
+	stroke-dashoffset:0;
+	stroke:#06D6A0
+}
+
+</style>
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
+        <span class="post-title">
             {{ post.title }}
-        </h2>
+        </span>
         {% if post.subtitle %}
         <h3 class="post-subtitle">
             {{ post.subtitle }}
@@ -16,15 +56,29 @@ description: "Believe in yourself"
         {% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
+            {{ post.content | strip_html | truncate:300 }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+            {{ post.content | strip_html | truncate:200 }}
             {% endif %}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on
+        {{ post.date | date: "%B %-d, %Y" }}
     </p>
+    <div id="workarea">
+        <div class="position">
+            <div class="svg-wrapper">
+                <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="40" width="150"></rect>
+                </svg>
+                <div id="text">
+                    <a class="read" href="{{ post.url | prepend: site.baseurl }}"><span class="spot"></span>阅读全文 >></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 <hr>
 {% endfor %}
@@ -34,7 +88,7 @@ description: "Believe in yourself"
 <ul class="pager">
     {% if paginator.previous_page %}
     <li class="previous">
-       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; 上一页</a>
     </li>
     {% endif %}
     {% if paginator.next_page %}

@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    #back-top {
+    position: fixed;
+    bottom: 30px;
+    right: 10%;
+    }
+    #back-top a {
+    width: 54px;
+    height: 54px;
+    display: block;
+    background: #ddd url(https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/top.png?raw=true) no-repeat center center;
+    background-color: #aaa;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    }
+    #back-top a:hover {
+    background-color: #777;
+    }
+</style>
 {% include head.html %}
 
 <!-- hack iOS CSS :active style -->
@@ -12,7 +35,9 @@
 
     {% include footer.html %}
 
-
+    <div id="back-top">
+        <a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html#top" title="回到顶部"></a>
+    </div>
 <!-- Image to hack wechat -->
 <img src="/img/avatar-xs.jpg" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
@@ -20,3 +45,21 @@
 </body>
 
 </html>
+<script>
+$("#back-top").hide();
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('#back-top').fadeIn();
+    } else {
+      $('#back-top').fadeOut();
+    }
+  });
+  $('#back-top a').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 800);
+    return false;
+  });
+});
+</script>
