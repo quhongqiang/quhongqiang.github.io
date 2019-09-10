@@ -107,6 +107,23 @@ layout: default
     </div>
 </article>
 
+<!-- 评论start -->
+<div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+    owner: 'quhongqiang',
+    repo: 'https://github.com/quhongqiang/quhongqiang.github.io',
+    oauth: {
+        client_id: '5d212223655ef1ed8962',
+        client_secret: '5265430adbef4beeea397a55eef6a7cebfe85a87',
+    },
+});
+gitment.render('gitmentContainer');
+</script>
+<!-- 评论 end -->
+
 <!-- add support for mathjax by voleking-->
 {% if page.mathjax %}
   {% include mathjax_support.html %}
