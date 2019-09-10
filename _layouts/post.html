@@ -5,7 +5,17 @@ layout: default
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
-
+<style>
+#vcomments .vcontrol .col-20 {
+    visibility: hidden;
+}
+#vcomments .vwrap .vheader .vnick {
+    color: red;
+}
+.v .vwrap {
+    background-color: #f0f0f0;
+}
+</style>
 
 
 <!-- Post Header -->
@@ -59,13 +69,7 @@ layout: default
                 </ul>
                 <hr style="visibility: hidden;">
 
-                {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-                <!-- disqus 评论框 end -->
-                {% endif %}
+                <div id="vcomments"></div>
 
                 {% if site.netease_comment %}
                 <!-- 网易云跟帖 评论框 start -->
@@ -84,7 +88,7 @@ layout: default
                 <div class="side-catalog">
                     <hr class="hidden-sm hidden-xs">
                     <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
+                        <a class="catalog-toggle" href="#">目录</a>
                     </h5>
                     <ul class="catalog-body"></ul>
                 </div>
@@ -107,23 +111,6 @@ layout: default
     </div>
 </article>
 
-<!-- 评论start -->
-<div id="gitmentContainer"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-    owner: 'quhongqiang',
-    repo: 'https://github.com/quhongqiang/quhongqiang.github.io',
-    oauth: {
-        client_id: '5d212223655ef1ed8962',
-        client_secret: '5265430adbef4beeea397a55eef6a7cebfe85a87',
-    },
-});
-gitment.render('gitmentContainer');
-</script>
-<!-- 评论 end -->
-
 <!-- add support for mathjax by voleking-->
 {% if page.mathjax %}
   {% include mathjax_support.html %}
@@ -145,6 +132,15 @@ gitment.render('gitmentContainer');
 <!-- 网易云跟帖JS代码 end -->
 {% endif %}
 
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'MOzriAMqmrfqyiLAUfBRfKf5-gzGzoHsz',
+        appKey: 'yRgeQoMCEqUgqwgdhciCxhjE',
+        placeholder: "来都来了，不写点什么吗~~~~"
+    })
+</script>
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
