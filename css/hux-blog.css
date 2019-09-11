@@ -1129,6 +1129,12 @@ ul li {
     right: 15px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .post-preview {
+    margin-top: 20px;
+  }
+}
 .post-preview > a {
   color: #404040;
 }
@@ -1149,11 +1155,12 @@ ul li {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
+  color: #aaa;
 }
 .post-preview > .post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
-  color: #cccccc;
-  font-size: 16px;
+  color: #acdaef;
+  font-size: 14px;
   font-style: italic;
   margin-top: 0;
   margin: 0!important;
@@ -1192,9 +1199,10 @@ ul li {
   }
   .post-preview > a > .post-subtitle {
     font-size: 16px;
+    color: #aaa;
   }
   .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .post-content-preview {
@@ -1548,9 +1556,10 @@ img::-moz-selection {
   }
   .mini-post-list .post-preview > a > .post-subtitle {
     font-size: 14px;
+    color: #aaa;
   }
   .mini-post-list .post-preview .post-meta {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 /* Tags support End*/

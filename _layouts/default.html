@@ -5,23 +5,68 @@
     #back-top {
     position: fixed;
     bottom: 30px;
-    right: 10%;
+    right: 5%;
     }
     #back-top a {
-    width: 54px;
-    height: 54px;
-    display: block;
-    background-color: #aaa;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    border-radius: 7px;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-    line-height: 27px;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border: 1px solid #e0e0e0;
+      -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+      border-radius: 5px;
+      background-color: #fff;
+      text-align: center;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+    }
+    #back-top a img {
+      display: block;
+      width: 22px;
+      height: auto;
+    }
+    #back-top a:hover span {
+      opacity: 1;
+    }
+    #back-top a:hover img {
+      opacity: 0;
+    }
+    #back-top a span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-size: 12px;
+      line-height: 14px;
+      background-color: #ca0c16;
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      border-radius: 5px;
+      -webkit-transition: opacity .3s ease-in-out;
+      transition: opacity .3s ease-in-out;
     }
 </style>
 {% include head.html %}
@@ -36,7 +81,10 @@
     {% include footer.html %}
 
     <div id="back-top">
-        <a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html#top" title="回到顶部">回到<br />顶部</a>
+        <a href="http://liberize.me/tech/jekyll-add-back-to-top-button.html#top" title="回到顶部">
+          <img src="/img/top.jpg" alt="回到顶部" srcset="">
+          <span class="show-txt">返回<br>顶部</span>
+        </a>
     </div>
 <!-- Image to hack wechat -->
 <img src="/img/avatar-xs.jpg" width="0" height="0" />
