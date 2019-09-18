@@ -46,7 +46,7 @@ _`以下篇幅较长，建议收藏了慢慢收看。在这里学到的肯定会
 
 **AJAX 工作原理**
 
-![Alt](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/q1.png?raw=true)
+![](https://github.com/quhongqiang/quhongqiang.github.io/blob/master/img/_posts/q1.png?raw=true)
 
 #### 一、Ajax
 

@@ -45,7 +45,15 @@
   display: block;
   border-radius: 5px;
   margin-bottom: 20px;
+  transform: rotate(0deg);
+  transition: transform 20s;
 }
+.sidebar-container .short-about img:hover {
+  transition: transform 20s;
+  transition-timing-function: ease;
+  transform: rotate(10800deg);
+}
+
 .sidebar-container .short-about p {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -1159,7 +1167,7 @@ ul li {
 }
 .post-preview > .post-meta {
   font-family: 'Lora', 'Times New Roman', serif;
-  color: #acdaef;
+  color: burlywood;
   font-size: 14px;
   font-style: italic;
   margin-top: 0;

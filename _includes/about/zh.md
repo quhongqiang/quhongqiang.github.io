@@ -1,7 +1,7 @@
 <style type="text/css">
     .background {
       background: #a0a0a0;
-      border-radius: 50px;
+      border-radius: 10px;
       color: #ffffff;
     }
 </style>
