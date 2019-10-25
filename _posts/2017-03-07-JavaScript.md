@@ -5,6 +5,8 @@ header-mask: 0.4
 author: '曲小强'
 title: JavaScript 内存管理
 catalog: true
+music-id: 1327781623
+auto: 1
 tags: 
   - 内存
 ---
